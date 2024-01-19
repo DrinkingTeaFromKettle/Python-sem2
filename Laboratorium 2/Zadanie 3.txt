@@ -1,0 +1,14 @@
+def policzPuste(tablica: list[list[int | None]]) -> int:
+    puste = 0
+    for i in tablica:
+        puste += sum(1 for j in i if j is None)
+    return puste
+
+
+if __name__ == '__main__':
+    lista = [[4, 7, None , 1, None, 3, 2],[1, -6, 3 , 12, None, 6, None], [4, 7, None , 1, None, 3, 2], [1, -6, 3 , 12, None, 6, None]]
+    puste = policzPuste(lista)
+    print("Lista: ")
+    print(lista)
+    print("Ilość pustych miejsc w liście: ")
+    print(puste)

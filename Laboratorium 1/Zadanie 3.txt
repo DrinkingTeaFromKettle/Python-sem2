@@ -1,0 +1,18 @@
+def liczbaDni(numerMiesiaca, rok):
+    match numerMiesiaca:
+        case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+            print("31")
+        case 4 | 6 | 9 | 11:
+            print("30")
+        case 2:
+            if rok < 1800 or rok > 2200:
+                print("Błedny rok")
+            elif rok % 4 == 0:
+                if rok % 100 == 0 and rok % 400 != 0:
+                    print("28")
+                else:
+                    print("29")
+            else:
+                print("28")
+        case _:
+            print("Błądny miesiąc")

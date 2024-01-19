@@ -1,0 +1,4 @@
+Nazwa: funkcja
+Data: 2024-01-17
+Godzina: 18
+Argumenty: ('argument 1', 2, <class 'object'>){}

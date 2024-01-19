@@ -1,0 +1,17 @@
+from numpy import mean, median
+
+def srednia(lista: list[int | float]) -> tuple[float, float]:
+    sr = mean(lista)
+    med = median(lista)
+    return sr, med
+
+
+if __name__ == '__main__':
+    lista: list[int | float] = [4, 7, -3.55, 1.333333]
+    print("Lista: ")
+    print(lista)
+    sr, med = srednia(lista)
+    print("Srednia listy:")
+    print(sr)
+    print("Mediana listy:")
+    print(med)

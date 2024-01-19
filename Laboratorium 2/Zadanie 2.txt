@@ -1,0 +1,10 @@
+def sortuj(krotka: tuple[int, ...]) -> list[int]:
+    return sorted(krotka)
+
+
+if __name__ == '__main__':
+    krotka = (7, 34, -9, 15555, 1, -47)
+    print("Krotka:")
+    print(krotka)
+    print("Posortowana lista: ")
+    print(sortuj(krotka))
