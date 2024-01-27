@@ -1,0 +1,12 @@
+Zadanie 2:  Czas wykonania dla threading:   0.007802400010405108s
+            Czas wykonania dla AsyncIO:     0.0014631999947596341s
+Zadanie 3:  Czas wykonania dla threading:   0.006315600010566413s
+            Czas wykonania dla AsyncIO:     0.001662499998928979s
+Zadanie 4:  Czas wykonania dla threading:
+            Czas wykonania dla AsyncIO:
+
+Zarówno moduł threading jak i AsyncIO służą do jednoczesnego wykonywania kilku zadań I/O, jednak użycie AsyncIO zamiast
+wątków z modułu threading znacznie przyspieszyło działanie programu. Ponieważ program sprawdza statusy wszystkich zadań,
+aby znaleźć wątek który jest gotowy do zakończenia, czas działania programu znacznie się wydłuża tym bardziej im więcej
+jest wątków do sprawdzenia. Moduł AsyncIO od razu przechodzi do gotowego zadania nie sprawdzając kolejno, czy pozostałe
+są gotowe. Im większa ilość wątków tym lepiej widać różnicę w działaniu obu modułów.
