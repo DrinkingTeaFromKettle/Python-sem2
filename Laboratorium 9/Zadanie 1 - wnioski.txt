@@ -1,0 +1,8 @@
+W pierwszym przykładzie wykorzystując wątki z puli wątków ThreadPoolExecutor pobierane są dane z kilku URL,
+ThreadPoolExecutor ustawiony jest na uruchomienie maksymalnie 5 wątków jednocześnie, co odpowiada ilości adresów.
+Jest to odpowiednie zastosowanie ThreadPoolExecutor ponieważ operacje pobrania danych są operacjami wejścia/wyjściam
+więc mogą być z powodzeniem wykonywane asynchronicznie. Asynchroniczność pozwala wykonywanie operacji podczas oczekiwania
+na zasoby, więc operacje nie są w rzeczywistości wykonywane równolegle, program jedynie efektywnie zarządza czasem procesora.
+W przykładzie z ProcessPoolExecutor program sprawdza, czy podane liczby są liczbami pierwszymi. Wykorzystanie
+ProcessPoolExecutor pozwala na uruchomienie wielu procesów pozwalających na równoległe obliczenia. ProcessPoolExecutor
+nadaje się lepiej do tego zadania, ponieważ w wykonywane operacje mogą być rozłożone pomiędzy fizyczne wątki procesora.
