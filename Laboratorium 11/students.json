@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "name": "Jan Kowalski",
+      "email": null,
+      "grades": [2,3,4,1,4],
+      "is_adult": false
+    },
+    {
+      "name": "Karolina Nowak",
+      "email": "j.kowalski8@gmail.com",
+      "grades": [5,4,5,3,4],
+      "is_adult": true
+    }
+  ]
+}

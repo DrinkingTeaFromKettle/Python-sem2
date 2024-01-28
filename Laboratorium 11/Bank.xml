@@ -1,0 +1,23 @@
+<Bank>
+	<Account>
+		<Name>Janina</Name>
+		<Surname>Borowik</Surname>
+		<AccountNumber>84098451117363460737222827</AccountNumber>
+		<AccountType>Personal</AccountType>
+		<Balance>10500</Balance>
+	</Account>
+	<Account>
+		<Name>Marek</Name>
+		<Surname>Mickiewicz</Surname>
+		<AccountNumber>22474717728511676040279919</AccountNumber>
+		<AccountType>Savings</AccountType>
+		<Balance>50001</Balance>
+	</Account>
+	<Account>
+		<Name>Boleslaw</Name>
+		<Surname>Prus</Surname>
+		<AccountNumber>76071415873484197179822038</AccountNumber>
+		<AccountType>Savings</AccountType>
+		<Balance>120003</Balance>
+	</Account>
+</Bank>
